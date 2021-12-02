@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.button {
+    width: 207px;
+    height: 51px;
+    border-radius: 2px;
+    background-color: #E3B873;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button:hover
+ {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;  
+    transition: 0.4s all;
+}
+
+header {
+    background-color: #131313;
+    
+}
+.header-wrapper{
+    height: 83px;
+    width: 1256px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo a {
+    font-size: 11px;
+    text-transform: uppercase;
+    color:#E3B873;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-menu {
+    width: 581px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 95px;
+    align-items: center;
+    list-style-type: none;
+}
+.header-menu__item a{
+    font-size: 11px;
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+}
+.header-menu__item a:hover {
+    color:#E3B873;
+}
+.phone a {
+    margin-left: 67px;
+    font-size: 11px;
+    color:#E3B873;
+
+}
+.button_slim {
+    width: 161px;
+    height: 37px;
+    margin-left: 20px;
+}
+
+.repair {
+    position: relative;
+    padding: 194px 0 208px 134px;
+    height: 707px;
+    background: url("../images/bg_top.jpg") center center/cover no-repeat ;
+}   
+
+.repair:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+.repair-wrapper {
+    position: relative;
+    z-index: 3;
+}
+.title, 
+.title_color{
+    width: 603px;
+    font-size: 40px;
+    font-family: "Yeseva One", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color:#fff;
+}
+.title_color{
+    color:#E3B873;
+}
+.descr {
+    width: 496px;
+    font-size: 22px;
+    line-height: 1.6;
+    color:#fff;
+    margin-top: 19px;
+}
+.button_cost, 
+.button_limpid{
+    margin-top: 41px;
+}
+.button_limpid {
+    margin-left: 20px;
+}
+
