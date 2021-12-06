@@ -3,10 +3,12 @@
     font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .button {
     width: 207px;
     height: 51px;
@@ -19,32 +21,35 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-.button:hover
- {
+
+.button:hover {
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;  
+    border: 1px solid #fff;
     transition: 0.4s all;
 }
 
 header {
     background-color: #131313;
-    
+
 }
-.header-wrapper{
-    height: 83px;
+
+.header-wrapper {
+    min-height: 83px;
     width: 1256px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
+
 .logo a {
     font-size: 11px;
     text-transform: uppercase;
-    color:#E3B873;
+    color: #E3B873;
     text-decoration: none;
     cursor: pointer;
 }
+
 .header-menu {
     width: 581px;
     display: flex;
@@ -53,21 +58,26 @@ header {
     align-items: center;
     list-style-type: none;
 }
-.header-menu__item a{
+
+.header-menu__item a {
     font-size: 11px;
     text-transform: uppercase;
-    color:#fff;
+    color: #fff;
     text-decoration: none;
 }
-.header-menu__item a:hover {
-    color:#E3B873;
+
+.header-menu__item a:hover
+{
+    color: #E3B873;
 }
+
 .phone a {
     margin-left: 67px;
     font-size: 11px;
-    color:#E3B873;
+    color: #E3B873;
 
 }
+
 .button_slim {
     width: 161px;
     height: 37px;
@@ -77,47 +87,144 @@ header {
 .repair {
     position: relative;
     padding: 194px 0 208px 134px;
-    height: 707px;
-    background: url("../images/bg_top.jpg") center center/cover no-repeat ;
-}   
+    min-height: 707px;
+    background: url("../images/bg_top.jpg") center center/cover no-repeat;
+}
 
-.repair:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
+.repair:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .7);
     z-index: 2;
 }
+
 .repair-wrapper {
     position: relative;
     z-index: 3;
 }
-.title, 
-.title_color{
+
+.title,
+.title_color {
     width: 603px;
     font-size: 40px;
     font-family: "Yeseva One", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color:#fff;
+    color: #fff;
 }
-.title_color{
-    color:#E3B873;
+
+.title_color {
+    color: #E3B873;
 }
+
 .descr {
     width: 496px;
     font-size: 22px;
     line-height: 1.6;
-    color:#fff;
+    color: #fff;
     margin-top: 19px;
 }
-.button_cost, 
-.button_limpid{
+
+.button_cost,
+.button_limpid {
     margin-top: 41px;
 }
+
 .button_limpid {
     margin-left: 20px;
 }
 
+.projects {
+    min-height: 1074px;
+    background-color: #131313;
+    padding: 107px 134px 416px 134px;
+}
+
+.projects-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.projects-menu__item a {
+    color: #FFFFFF4D;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 60px;
+    font-family: "Yeseva One", Helvetica, Arial, sans-serif;
+}
+.projects-menu__item a:hover
+{
+    color: #E3B873;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #E3B873;
+}
+.title_fz-27 {
+    font-size: 27px;
+    width: 253px;
+    line-height: 1.3;
+}
+.projects-info .descr {
+    font-size: 14px;
+    width: 442px;
+    line-height: 1.9;
+}
+.title_fz-18 {
+    font-size: 18px;
+    margin: 0;
+}
+.descr_fz-13 {
+    font-size: 13px;
+    margin-top: 9px;
+    width: 134px;
+}
+.specifications {
+    margin-top: 42px;
+    width: 434px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 34px;
+}
+.specifications__item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.projects-wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.projects-slider{
+    margin-top: 65px;
+    display: flex;
+}
+.projects-img img {
+    max-width: 679px;
+    height: auto;
+}
+.projects-slider__circle div {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.projects-slider__circle {
+    display: flex;
+    justify-content: space-between;
+    width: 64px;
+    align-items: center;
+    margin: 0 29px;
+
+}
+.projects-slider__circle_active div{
+    background: #fff;
+}
+.projects-slider__left, .projects-slider__right {
+    margin-top: 6px;
+}
