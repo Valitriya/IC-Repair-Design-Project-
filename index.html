@@ -42,8 +42,10 @@
                     <p class="descr">Get ready-made turnkey repairs on time
                         with work time saving up to 45 days and 20% from
                         cost of materials due to the organization of work</p>
-                    <button class="button button_cost">calculate the cost</button>
-                    <button class="button button_limpid">submit your application</button>
+                    <div class="buttons">
+                        <button class="button button_cost">calculate the cost</button>
+                        <button class="button button_limpid">submit your application</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,20 +140,20 @@
 
                 <form action="##" class="online__form" method="post">
                     <div class="form-wrapper">
-                        <div class="online__input">
-                            <input required name="name" id="name" type="text" placeholder="What is your name:">
+                        <div class="form__input">
+                            <input required name="name" id="name" type="text" placeholder="What is your name:">                           
                             <label for="name">Name</label>
                         </div>
-                        <div class="online__input">
+                        <div class="form__input">
                             <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
-                                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
-                            <label for="tel">Phone</label>
+                                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">  
+                            <label for="tel">Phone</label>   
                         </div>
                         <div class="button button_form">Submit</div>
                     </div>
-                    <div class="online__agree">
-                        <input required type="checkbox" id="chek" checked>
-                        <label class="label_agree" for="chek">I agree to the processing of personal data</label>
+                    <div class="form__agree">
+                        <input required type="checkbox" id="chek" checked>   
+                        <label class="label_agree" for="chek">I agree to the processing of personal data</label>        
                     </div>
                 </form>
             </div>
@@ -170,7 +172,7 @@
                         <img src="images/img-repair_1.jpg" alt="type of repair" class="img-repair">
                         <div class="types-info">
                             <div class="types-info__items">
-                                <h4 class="types__subtitle">Redecorating</h4>
+                                <h3 class="types__subtitle">Redecorating</h3>
                                 <ul class="types-descr">
                                     <li class="types-descr__item">Dismantling of old coatings </li>
                                     <li class="types-descr__item">Wallpapering</li>
@@ -191,7 +193,7 @@
                         <img src="images/img-repair_2.jpg" alt="type of repair" class="img-repair">
                         <div class="types-info">
                             <div class="types-info__items">
-                                <h4 class="types__subtitle">Overhaul</h4>
+                                <h3 class="types__subtitle">Overhaul</h3>
                                 <ul class="types-descr">
                                     <li class="types-descr__item">Dismantling of old coatings</li>
                                     <li class="types-descr__item">Wallpapering</li>
@@ -213,7 +215,7 @@
                         <img src="images/img-repair_3.jpg" alt="type of repair" class="img-repair">
                         <div class="types-info">
                             <div class="types-info__items">
-                                <h4 class="types__subtitle">Designer Repair</h4>
+                                <h3 class="types__subtitle">Designer Repair</h3>
                                 <ul class="types-descr">
                                     <li class="types-descr__item">Dismantling of old coatings</li>
                                     <li class="types-descr__item">Wallpapering</li>
@@ -229,6 +231,63 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="request">
+            <div class="request__img">
+                <img src="images/bg_building.png" alt="background_building">
+            </div>
+            <div class="request-wrapper">
+                <div class="about-us">
+                    <div class="about-us__items">
+                        <div class="circles">01</div>
+                        <p class="about-us__item"> Our specialist will arrive for measurements per day
+                        contact, or appoint a date convenient for you
+                    </p>
+                    </div>
+                    <div class="about-us__items">
+                        <div class="circles">02</div>
+                        <p class="about-us__item">Free metering</p>
+                    </div>
+                    <div class="about-us__items">
+                        <div class="circles">03</div>
+                        <p class="about-us__item">Free consultation</p>
+                    </div>
+                    <div class="about-us__items">
+                        <div class="circles">04</div>
+                        <p class="about-us__item">Get a cost estimate 
+                            <br>
+                             and the timing of your future repairs</p>
+                    </div>        
+                </div>
+                <form action="##" class="request__form" method="post">
+                    <h3 class="request__subtitle">Leave a request for free
+                        <br>
+                        departure of the measurer</h3>
+
+                    <div class="request__form-wrapper">
+                        <div class="form__input form__input_size">
+                            <input required name="name" id="name" type="text" placeholder="What is your name:">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form__input form__input_size">
+                            <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
+                                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+                                <label for="tel">Phone</label>
+                        </div>     
+                        <div class="form__input form__input_size">
+                            <input required name="email" id="email" type="text" placeholder="Your email">
+                            <label for="email">Email</label>
+                        </div>                 
+                    </div>
+                    <div class="form__agree form__agree_position">
+                        <input required type="checkbox" id="chek" checked>   
+                        <label class="label_agree label_agree_chek" for="chek">I agree to the processing of personal data</label>        
+                    </div>    
+                    <div class="button button_call">Call the measurer</div>
+                </form>
+                
                 </div>
             </div>
         </section>
