@@ -47,6 +47,18 @@
     color: #fff;
     text-align: center;
 }
+.divider {
+    width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.divider span {
+    height: 2px;
+    width: 32px;
+    background-color: #E3B873;
+}
 
 header {
     background-color: #131313;
@@ -106,11 +118,12 @@ header {
     position: relative;
     padding: 194px 0 208px 134px;
     min-height: 707px;
-    background: url("../images/bg_top.jpg") center center/cover no-repeat;
+    background: url("../images/bg_repair.jpg") center center/cover no-repeat;
 }
 
 .repair:before, 
-.online-video:before {
+.online-video:before,
+.fantasies:before {
     content: '';
     position: absolute;
     top: 0;
@@ -170,10 +183,11 @@ header {
     color: #E3B873;
     padding-bottom: 7px;
     border-bottom: 1px solid #E3B873;
+    transition: all .6s;
 }
 .title_fz-27 {
     font-size: 27px;
-    width: 253px;
+    max-width: 253px;
     line-height: 1.3;
 }
 .projects-info .descr {
@@ -242,21 +256,10 @@ header {
 }
 .online {
     padding: 0 311px;
-    margin: -340px 0 76px;
+    margin: -340px 0 147px;
     min-height: 800px;
 }
-.online-camera {
-    width: 114px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-.online-camera span {
-    height: 2px;
-    width: 32px;
-    background-color: #E3B873;
-}
+
 .online-video {
     width: 817px;
     margin: 0 auto;
@@ -298,8 +301,6 @@ hr {
     font-size: 18px;
     text-align: center;
 }
-
-
 
 .form-wrapper {
     margin: 0 auto;
@@ -368,7 +369,8 @@ input[type=checkbox]:checked + .label_agree:before
 
 
 .types {
-    padding: 0 103px 171px;
+    padding: 0 101px 242px;
+    background: url(../images/bg_types.png) left 71.8% / auto no-repeat;
 }
 .subtitle_color {
     color: #181818;
@@ -441,24 +443,23 @@ input[type=checkbox]:checked + .label_agree:before
     z-index: 2;
     margin-left: 31px;
 }
-.request {
-    position: relative;
-    padding-top: 59px;
-}
+
 .request__img {
     position: absolute;
     width: 645px;
     bottom: 0;
 }
-.request-wrapper {
+.request {
     display: flex;
     justify-content: end;
+    margin-top: 233px;
 
 }
 .about-us {
     display: flex;
     flex-direction: column;
-    margin-right: 218px;
+    justify-content: space-between;
+    margin-right: 217px;
     z-index: 1;
 }
 .circles {
@@ -481,7 +482,7 @@ input[type=checkbox]:checked + .label_agree:before
     width: 375px;
     margin-top: 83px;
 }
-.about-us__items:first-child{
+.about-us__items:first-child {
     margin-top: 0;
 }
 .about-us__item {
@@ -560,4 +561,178 @@ input[type=checkbox]:checked + .label_agree:before
 }
 ::-moz-placeholder, :-moz-placeholder {
     opacity: 1;
+}
+
+.save {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 38px;
+    align-items: center;
+    margin-right: 165px;
+}
+.save__img {
+    width: 72px;
+    height: 72px;
+    background-color: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.save p {
+    font-size: 18px;
+    color: #E3B873;
+    max-width: 344px;
+    line-height: 1.4;
+    margin-left: 21px;
+}
+
+
+.fantasies {
+    position: relative;
+    height: 864px;
+    background: url("../images/bg_fantasies.jpg") center center / cover no-repeat;
+
+}
+.fantasies-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 0 99px 0 97px;
+    display: flex;
+}
+.fantasies__link {
+    margin-top: 137px;
+}
+
+.title_width {
+    max-width: 411px;
+    margin: 0;
+}
+.fantasies-menu {
+    margin-top: 47px;
+    min-height: 516px;
+    padding: 0;
+    list-style-type: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fantasies-menu__item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.fantasies-menu__item a:hover {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    transition: all .6s;
+}
+.fantasies-block-1__img {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       width: 751px;
+}
+.fantasies-block-1__images img ,
+.fantasies-block-2__images img{
+    width: 354px;
+}
+.fantasies-block-1__images {
+    margin-top: -40px;
+    margin-left: 77px;
+}
+.fantasies-block-1__images img:first-child {
+    height: 558px;
+}
+.fantasies-block-1__images img:last-child {
+    height: 349px;
+    margin-top: 39px;
+}
+.fantasies-block-2__images {
+    margin-top: -112px;
+    margin-left: 43px;
+}
+.fantasies-block-2__images img:first-child {
+    height: 275px;
+}
+.fantasies-block-2__images img:last-child {
+    margin-top: 37px;
+    height: 625px;
+}
+
+.clients {
+    padding: 110px 101px 354px;
+}
+.clients .descr {
+    width: 476px;
+    margin: 0 auto;
+    margin-top: 24px;
+    text-align: center;
+    color: #363636;
+    font-size: 18px;
+}
+
+.clients-wrapper {
+    margin: 0 auto;
+    margin-top: 39px;
+    width: 1236px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews {
+    width: 376px;
+    min-height: 428px;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.reviews-wrapper {
+    padding: 24px 32px 90px 20px;
+}
+.info-wrapper {
+    display: flex;
+    align-items: center;
+}
+.reviews__foto img {
+    border-radius: 100%;
+    width: 76px;
+    height: 76px;
+}
+.reviews__title {
+    font-family: "Yeseva One", Helvetica, Arial, sans-serif;
+    margin-left: 23px;
+    width: 178px;
+    color: #181818;
+    font-size: 18px;
+}
+.reviews__descr {
+    margin-top: 22px;
+    color: #959595;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.data {
+    width: 294px;
+    height: 54px;
+    background-color: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;  
+    margin-bottom: -27px;
+}
+.data img{
+    width: 32px;
+    height: 31px;
+    margin: 11px 15px 12px 17px;
+}
+.data span {
+    border: 1px solid #fff; 
+    margin-left: 14px;
+}
+.data p {
+    font-family: "Yeseva One", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
 }
