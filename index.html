@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IC "Repair Design Project</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://icons8.ru/icons/share-collections/tVx3gpMWta0D">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header-wrapper">
                 <span class="logo"><a href="##">IC "Repair Design Project"</a></span>
@@ -180,11 +181,12 @@
                             <label for="tel">Phone</label>
                         </div>
                         <button type="submit" class="online-form__button button">Submit</button>
-                    </div>
+                    
                     <div class="online-form__agree">
                         <input required type="checkbox" id="chek" checked>
                         <label class="label_agree" for="chek">I agree to the processing of personal data</label>
                     </div>
+                </div>
                 </form>
             </div>
         </section>
@@ -487,11 +489,99 @@
                 </div>
             </div>
         </section> 
+        <section class="map">
+            <div class="container">
+                <form action="##" class="map-form" method="POST">
+                    <h3 class="map-form__subtitle">
+                        Have any questions? 
+                    </h3>
+                        <div class="map-form__wrapper">
+                            <div class="request-form__input map-form__input">
+                                <label for="name">Name</label>
+                                <input required name="name" id="name" type="text" placeholder="What is your name:">     
+                            </div>
+                            <div class="request-form__input map-form__input">
+                                <label for="tel">Phone</label>
+                                <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
+                                    pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+                            </div>
+                            <div class="request-form__input map-form__input">
+                                <label for="email">Question</label>
+                                <input required name="email" id="email" type="text" placeholder="I want to know:">   
+                            </div>
+                        </div>
+                        <div class="map-form__agree">
+                            <input required type="checkBox" id="checkBox" checked>
+                            <label class="label_agree-center" for="checkBox">I agree to the processing of personal data</label>
+                        </div>
+                    <button class="button button_map">submit</button>
+                </form>
+                <div class="map__wrapper">
+                    <h3 class="map__title">
+                        Rostov-on-Don, Nansen St., 239 Shopping Center
+                        <br>
+                        Decorum Tel 
+                        <a href="tel:79287683229">+7 (928) 768 32 29</a>
+                    </h3>
+                   <div class="map-social">
+                    <div class="map-social__email">
+                        <a href="mailto:##">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.4 1.12158H13.6C14.37 1.12158 15 1.75158 15 2.52158V10.9216C15 11.6916 14.37 12.3216 13.6 12.3216H2.4C1.63 12.3216 1 11.6916 1 10.9216V2.52158C1 1.75158 1.63 1.12158 2.4 1.12158Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 2.52197L8 7.42197L1 2.52197" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="map-social__instagram">
+                        <a href="##">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 1.72119H4.00001C2.34316 1.72119 1.00001 3.06434 1.00001 4.72119V10.7212C1.00001 12.378 2.34316 13.7212 4.00001 13.7212H10C11.6569 13.7212 13 12.378 13 10.7212V4.72119C13 3.06434 11.6569 1.72119 10 1.72119Z" stroke="white" stroke-width="1.5"/>
+                            <path d="M9.40003 7.34337C9.47408 7.84272 9.38879 8.3527 9.15629 8.80078C8.92379 9.24886 8.55592 9.61222 8.10501 9.83918C7.6541 10.0661 7.1431 10.1451 6.6447 10.0649C6.14631 9.98473 5.68589 9.74942 5.32894 9.39247C4.97198 9.03552 4.73667 8.5751 4.65647 8.0767C4.57627 7.5783 4.65527 7.06731 4.88223 6.6164C5.10919 6.16548 5.47254 5.79762 5.92062 5.56512C6.3687 5.33262 6.87869 5.24733 7.37803 5.32137C7.88739 5.3969 8.35894 5.63425 8.72305 5.99836C9.08715 6.36246 9.3245 6.83402 9.40003 7.34337Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>    
+                        </a>
+                    </div>
+                   </div>
+                   <div class="map__city">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.564250217401!2d39.721977868837!3d47.24466877605234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1641493495128!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                   </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <span class="logo"><a href="##">IC "Repair Design Project"</a></span>
+                <nav>
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <a href="##">home</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="##">projects</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="##">measurement</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="##">team</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="##">reviews</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="##">contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="phone">
+                    <a href="tel:89287683239">+7 (928) 768-32-39</a>
+                </span>
+                <button class="button button_slim">Request a call</button>
+            </div>
+        </div>
+    </footer> 
 </body>
 
 </html>
