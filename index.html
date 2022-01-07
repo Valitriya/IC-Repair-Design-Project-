@@ -16,7 +16,9 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <span class="logo"><a href="##">IC "Repair Design Project"</a></span>
+                <span class="logo">
+                    <a href="##">IC "Repair Design Project"</a>
+                </span>
                 <nav>
                     <ul class="header-menu">
                         <li class="header-menu__item">
@@ -50,8 +52,7 @@
         <section class="repair">
             <div class="container">
                 <div class="repair-wrapper">
-                    <h1 class="title">Turnkey Repair in the
-                        city of
+                    <h1 class="title">Turnkey Repair in the city of
                         <span class="title title_color">Rostov-on-Don</span>
                     </h1>
                     <p class="descr">
@@ -70,7 +71,6 @@
 
         <section class="projects">
             <div class="container">
-                
                 <div class="projects-wrapper">
                     <div class="projects-menu">
                         <li class="projects-menu__item">
@@ -106,7 +106,7 @@
                             <h3 class="title_color title_fz-18">apartment area:</h3>
                             <div class="specifications__item-descr descr_fz-13">81 m2</div>
                         </div>
-                        
+
                         <div class="specifications__item">
                             <h3 class="title_color title_fz-18">Repair time:</h3>
                             <div class="specifications__item-descr descr_fz-13">3.5 months</div>
@@ -118,7 +118,11 @@
                     </div>
                     <div class="projects-img">
                         <div class="active">
-                            <img src="images/images_projects/chairs.jpg" alt="chairs">
+                            <img srcset="images/images_projects/tv.jpg 340w,
+                                        images/images_projects/chairs.jpg 632w" 
+                                        sizes="(max-width:576px) 320px,
+                                        (min-width:577px) 632px" 
+                                        src="images/images_projects/chairs.jpg" alt="chairs">
                         </div>
                         <div>
                             <img src="images/images_projects/tv.jpg" alt="tv">
@@ -126,7 +130,24 @@
                         <div>
                             <img src="images/images_projects/chairs.jpg" alt="chairs">
                         </div>
-                    </div>  
+
+                        <button class="left_arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.56569 12.478L1.08689 6.99975L6.56569 1.52147L7.34778 2.30348L2.65107 6.99975L7.34778 11.696L6.56569 12.478Z"
+                                    fill="white" stroke="white" stroke-width="0.75" />
+                            </svg>
+                        </button>
+                        <button class="right_arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.43431 1.52197L6.91311 7.00025L1.43431 12.4785L0.652222 11.6965L5.34894 7.00025L0.652222 2.30399L1.43431 1.52197Z"
+                                    fill="white" stroke="white" stroke-width="0.75" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="projects-slider">
                     <div class="projects-slider__left">
@@ -181,12 +202,12 @@
                             <label for="tel">Phone</label>
                         </div>
                         <button type="submit" class="online-form__button button">Submit</button>
-                    
-                    <div class="online-form__agree">
-                        <input required type="checkbox" id="chek" checked>
-                        <label class="label_agree" for="chek">I agree to the processing of personal data</label>
+
+                        <div class="online-form__agree">
+                            <input required type="checkbox" id="chek" checked>
+                            <label class="label_agree" for="chek">I agree to the processing of personal data</label>
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </section>
@@ -216,7 +237,6 @@
                             </div>
                         </div>
                     </div>
-                    
 
                     <div class="types__items">
                         <div class="types-info">
@@ -237,7 +257,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="types__items">
                         <div class="types-info">
@@ -260,11 +279,12 @@
                     </div>
                 </div>
 
-                 <div class="request">
+                <div class="request">
                     <div class="about-us">
                         <div class="about-us__items">
                             <div class="circles">01</div>
-                            <p class="about-us__item"> Our specialist will arrive for measurements per day
+                            <p class="about-us__item">
+                                Our specialist will arrive for measurements per day
                                 contact, or appoint a date convenient for you
                             </p>
                         </div>
@@ -285,26 +305,28 @@
                     </div>
                     <form action="##" class="request-form" method="POST">
                         <h3 class="request-form__subtitle">
-                            Leave a request for free departure of the measurer </h3>
-                            <div class="request-form__wrapper">
-                                <div class="request-form__input">
-                                    <label for="name">Name</label>
-                                    <input required name="name" id="name" type="text" placeholder="What is your name:">     
-                                </div>
-                                <div class="request-form__input">
-                                    <label for="tel">Phone</label>
-                                    <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
-                                        pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
-                                </div>
-                                <div class="request-form__input">
-                                    <label for="email">Email</label>
-                                    <input required name="email" id="email" type="text" placeholder="Your email">   
-                                </div>
+                            Leave a request for free departure of the measurer 
+                        </h3>
+                        <div class="request-form__wrapper">
+                            <div class="request-form__input">
+                                <label for="name">Name</label>
+                                <input required name="name" id="name" type="text" placeholder="What is your name:">
                             </div>
-                            <div class="request-form__agree">
-                                <input required type="checkbox" id="checkbox" checked>
-                                <label class="label_agree_position" for="checkbox">I agree to the processing of personal data</label>
+                            <div class="request-form__input">
+                                <label for="tel">Phone</label>
+                                <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
+                                    pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
                             </div>
+                            <div class="request-form__input">
+                                <label for="email">Email</label>
+                                <input required name="email" id="email" type="text" placeholder="Your email">
+                            </div>
+                        </div>
+                        <div class="request-form__agree">
+                            <input required type="checkbox" id="checkbox" checked>
+                            <label class="label_agree_position" for="checkbox">I agree to the processing of personal
+                                data</label>
+                        </div>
                         <button class="button button_call">Call the measurer</button>
                     </form>
                 </div>
@@ -315,16 +337,17 @@
                     <p>Help save 10 - 20% of the
                         <br>
                         cost of materials</p>
-                </div> 
+                </div>
             </div>
-        </section> 
+        </section>
+        
         <section class="fantasies">
             <div class="container">
                 <div class="fantasies-wrapper">
                     <div class="fantasies__link">
-                        <h2 class="fantasies__title title_color title_fz-27">We realize your
-
-                            wildest fantasies</h2>
+                        <h2 class="fantasies__title title_color title_fz-27">
+                            We realize your wildest fantasies
+                        </h2>
                         <ul class="fantasies-menu">
                             <li class="fantasies-menu__item">
                                 <a href="##">American classic</a>
@@ -372,7 +395,11 @@
 
                     <div class="fantasies-block__mobile">
                         <div class="active">
-                            <img src="images/images_fantasies/clock_mobile.jpg" alt="clock_mobile">
+                            <img srcset="images/images_fantasies/clock_mobile.jpg 340w,
+                                        images/bg_fantasies.jpg 632w" 
+                                sizes="(max-width:576px) 320px,
+                                (min-width:577px) 632px"
+                                src="images/bg_fantasies.jpg" alt="clock_mobile">
                         </div>
                         <div>
                             <img src="images/images_fantasies/tv.jpg" alt="tv">
@@ -383,11 +410,27 @@
                         <div>
                             <img src="images/images_fantasies/flower.jpg" alt="flower">
                         </div>
+                        <button class="left_arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.56569 12.478L1.08689 6.99975L6.56569 1.52147L7.34778 2.30348L2.65107 6.99975L7.34778 11.696L6.56569 12.478Z"
+                                    fill="white" stroke="white" stroke-width="0.75" />
+                            </svg>
+                        </button>
+                        <button class="right_arrow">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.43431 1.52197L6.91311 7.00025L1.43431 12.4785L0.652222 11.6965L5.34894 7.00025L0.652222 2.30399L1.43431 1.52197Z"
+                                    fill="white" stroke="white" stroke-width="0.75" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <section class="clients">
             <div class="container">
                 <h3 class="subtitle subtitle_color">our clients</h3>
@@ -423,14 +466,12 @@
                         </div>
                         <div class="data">
                             <img src="images/icons/area.svg" alt="area">
-                            <p>40m2</p> 
+                            <p>40m2</p>
                             <span></span>
                             <img src="images/icons/schedule.svg" alt="schedule">
-                            <p>48 days</p> 
+                            <p>48 days</p>
                         </div>
-                       
                     </div>
-
                     <div class="reviews">
                         <div class="reviews-wrapper">
                             <div class="info-wrapper">
@@ -452,13 +493,12 @@
                         </div>
                         <div class="data">
                             <img src="images/icons/area.svg" alt="area">
-                            <p>90m2</p> 
+                            <p>90m2</p>
                             <span></span>
                             <img src="images/icons/schedule.svg" alt="schedule">
-                            <p>128 days</p> 
+                            <p>128 days</p>
                         </div>
                     </div>
-
                     <div class="reviews">
                         <div class="reviews-wrapper">
                             <div class="info-wrapper">
@@ -480,79 +520,96 @@
                         </div>
                         <div class="data">
                             <img src="images/icons/area.svg" alt="area">
-                            <p>56m2</p> 
+                            <p>56m2</p>
                             <span></span>
                             <img src="images/icons/schedule.svg" alt="schedule">
-                            <p>86 days</p> 
+                            <p>86 days</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+
         <section class="map">
             <div class="container">
                 <form action="##" class="map-form" method="POST">
                     <h3 class="map-form__subtitle">
-                        Have any questions? 
+                        Have any questions?
                     </h3>
-                        <div class="map-form__wrapper">
-                            <div class="request-form__input map-form__input">
-                                <label for="name">Name</label>
-                                <input required name="name" id="name" type="text" placeholder="What is your name:">     
-                            </div>
-                            <div class="request-form__input map-form__input">
-                                <label for="tel">Phone</label>
-                                <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
-                                    pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
-                            </div>
-                            <div class="request-form__input map-form__input">
-                                <label for="email">Question</label>
-                                <input required name="email" id="email" type="text" placeholder="I want to know:">   
-                            </div>
+                    <div class="map-form__wrapper">
+                        <div class="request-form__input map-form__input">
+                            <label for="name">Name</label>
+                            <input required name="name" id="name" type="text" placeholder="What is your name:">
                         </div>
-                        <div class="map-form__agree">
-                            <input required type="checkBox" id="checkBox" checked>
-                            <label class="label_agree-center" for="checkBox">I agree to the processing of personal data</label>
+                        <div class="request-form__input map-form__input">
+                            <label for="tel">Phone</label>
+                            <input required name="tel" id="tel" type="tel" placeholder="Your phone number:"
+                                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
                         </div>
+                        <div class="request-form__input map-form__input">
+                            <label for="email">Question</label>
+                            <input required name="email" id="email" type="text" placeholder="I want to know:">
+                        </div>
+                    </div>
+                    <div class="map-form__agree">
+                        <input required type="checkBox" id="checkBox" checked>
+                        <label class="label_agree-center" for="checkBox">I agree to the processing of personal
+                            data</label>
+                    </div>
                     <button class="button button_map">submit</button>
                 </form>
                 <div class="map__wrapper">
                     <h3 class="map__title">
                         Rostov-on-Don, Nansen St., 239 Shopping Center
                         <br>
-                        Decorum Tel 
+                        Decorum Tel
                         <a href="tel:79287683229">+7 (928) 768 32 29</a>
                     </h3>
-                   <div class="map-social">
-                    <div class="map-social__email">
-                        <a href="mailto:##">
-                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.4 1.12158H13.6C14.37 1.12158 15 1.75158 15 2.52158V10.9216C15 11.6916 14.37 12.3216 13.6 12.3216H2.4C1.63 12.3216 1 11.6916 1 10.9216V2.52158C1 1.75158 1.63 1.12158 2.4 1.12158Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 2.52197L8 7.42197L1 2.52197" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+                    <div class="map-social">
+                        <div class="map-social__email">
+                            <a href="mailto:##">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.4 1.12158H13.6C14.37 1.12158 15 1.75158 15 2.52158V10.9216C15 11.6916 14.37 12.3216 13.6 12.3216H2.4C1.63 12.3216 1 11.6916 1 10.9216V2.52158C1 1.75158 1.63 1.12158 2.4 1.12158Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15 2.52197L8 7.42197L1 2.52197" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="map-social__instagram">
+                            <a href="##">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 1.72119H4.00001C2.34316 1.72119 1.00001 3.06434 1.00001 4.72119V10.7212C1.00001 12.378 2.34316 13.7212 4.00001 13.7212H10C11.6569 13.7212 13 12.378 13 10.7212V4.72119C13 3.06434 11.6569 1.72119 10 1.72119Z"
+                                        stroke="white" stroke-width="1.5" />
+                                    <path
+                                        d="M9.40003 7.34337C9.47408 7.84272 9.38879 8.3527 9.15629 8.80078C8.92379 9.24886 8.55592 9.61222 8.10501 9.83918C7.6541 10.0661 7.1431 10.1451 6.6447 10.0649C6.14631 9.98473 5.68589 9.74942 5.32894 9.39247C4.97198 9.03552 4.73667 8.5751 4.65647 8.0767C4.57627 7.5783 4.65527 7.06731 4.88223 6.6164C5.10919 6.16548 5.47254 5.79762 5.92062 5.56512C6.3687 5.33262 6.87869 5.24733 7.37803 5.32137C7.88739 5.3969 8.35894 5.63425 8.72305 5.99836C9.08715 6.36246 9.3245 6.83402 9.40003 7.34337Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
-                    <div class="map-social__instagram">
-                        <a href="##">
-                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 1.72119H4.00001C2.34316 1.72119 1.00001 3.06434 1.00001 4.72119V10.7212C1.00001 12.378 2.34316 13.7212 4.00001 13.7212H10C11.6569 13.7212 13 12.378 13 10.7212V4.72119C13 3.06434 11.6569 1.72119 10 1.72119Z" stroke="white" stroke-width="1.5"/>
-                            <path d="M9.40003 7.34337C9.47408 7.84272 9.38879 8.3527 9.15629 8.80078C8.92379 9.24886 8.55592 9.61222 8.10501 9.83918C7.6541 10.0661 7.1431 10.1451 6.6447 10.0649C6.14631 9.98473 5.68589 9.74942 5.32894 9.39247C4.97198 9.03552 4.73667 8.5751 4.65647 8.0767C4.57627 7.5783 4.65527 7.06731 4.88223 6.6164C5.10919 6.16548 5.47254 5.79762 5.92062 5.56512C6.3687 5.33262 6.87869 5.24733 7.37803 5.32137C7.88739 5.3969 8.35894 5.63425 8.72305 5.99836C9.08715 6.36246 9.3245 6.83402 9.40003 7.34337Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>    
-                        </a>
+                    <div class="map__city">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.564250217401!2d39.721977868837!3d47.24466877605234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1641493495128!5m2!1sru!2sru"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                   </div>
-                   <div class="map__city">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.564250217401!2d39.721977868837!3d47.24466877605234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1641493495128!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                   </div>
                 </div>
             </div>
         </section>
-
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <span class="logo"><a href="##">IC "Repair Design Project"</a></span>
+                <span class="logo">
+                    <a href="##">IC "Repair Design Project"</a>
+                </span>
                 <nav>
                     <ul class="header-menu">
                         <li class="header-menu__item">
@@ -581,7 +638,6 @@
                 <button class="button button_slim">Request a call</button>
             </div>
         </div>
-    </footer> 
+    </footer>
 </body>
-
 </html>
